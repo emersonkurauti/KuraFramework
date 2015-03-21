@@ -1,0 +1,96 @@
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoGrid.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucCampoTextoCPF.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucCampoNumerico.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucCampoTextoCNPJ.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucCadastroBasico.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\Users\Emerson\Documents\KuraFrameWork\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucLogin.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucLogin.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucLogin.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll.config
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucLogin.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
+C:\KuraSoft\KuraFramework\bin\Debug\KuraFrameWork.dll.config
+C:\KuraSoft\KuraFramework\bin\Debug\KuraFrameWork.dll
+C:\KuraSoft\KuraFramework\bin\Debug\KuraFrameWork.pdb
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucLogin.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucMenuBasico.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Properties.Resources.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCadastro.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.dll
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.pdb
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPFCNPJ.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache

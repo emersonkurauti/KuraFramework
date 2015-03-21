@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{944A4514-EAFB-429B-A896-80B714179115}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KuraFrameWork</RootNamespace>
+    <AssemblyName>KuraFrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\oraclexe\app\oracle\product\11.2.0\server\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banco\csBanco.cs" />
+    <Compile Include="Banco\csBanco_2_0_EMTESTE.cs" />
+    <Compile Include="ClasseBase\csControllerBase.cs" />
+    <Compile Include="ClasseBase\csModelBase.cs" />
+    <Compile Include="Componentes Visuais\ucComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucComboBox.Designer.cs">
+      <DependentUpon>ucComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucConsulta.Designer.cs">
+      <DependentUpon>ucConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucImagens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucImagens.Designer.cs">
+      <DependentUpon>ucImagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucParametroRelatorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucParametroRelatorio.Designer.cs">
+      <DependentUpon>ucParametroRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBox.Designer.cs">
+      <DependentUpon>ucTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMask.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMask.Designer.cs">
+      <DependentUpon>ucTextBoxMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCEP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCEP.Designer.cs">
+      <DependentUpon>ucTextBoxMaskCEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCNPJ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCNPJ.Designer.cs">
+      <DependentUpon>ucTextBoxMaskCNPJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCPF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCPF.Designer.cs">
+      <DependentUpon>ucTextBoxMaskCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.Designer.cs">
+      <DependentUpon>ucTextBoxMaskCPFCNPJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskTelefone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxMaskTelefone.Designer.cs">
+      <DependentUpon>ucTextBoxMaskTelefone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxNumero.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucTextBoxNumero.Designer.cs">
+      <DependentUpon>ucTextBoxNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constantes\csConstantes.cs" />
+    <Compile Include="Formularios\ucConsultaBasicaNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ucConsultaBasicaNormal.Designer.cs">
+      <DependentUpon>ucConsultaBasicaNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ucCadastroBasico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ucCadastroBasico.Designer.cs">
+      <DependentUpon>ucCadastroBasico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ucCadastroBasicoNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ucCadastroBasicoNormal.Designer.cs">
+      <DependentUpon>ucCadastroBasicoNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ucLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ucMenuBasico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ucMenuBasico.Designer.cs">
+      <DependentUpon>ucMenuBasico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensagem\csMensagem.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucBotoesCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucBotoesCadastro.Designer.cs">
+      <DependentUpon>ucBotoesCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Componentes Visuais\ucConsulta.resx">
+      <DependentUpon>ucConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes Visuais\ucImagens.resx">
+      <DependentUpon>ucImagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes Visuais\ucTextBoxMaskCPF.resx">
+      <DependentUpon>ucTextBoxMaskCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.resx">
+      <DependentUpon>ucTextBoxMaskCPFCNPJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ucConsultaBasicaNormal.resx">
+      <DependentUpon>ucConsultaBasicaNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ucCadastroBasico.resx">
+      <DependentUpon>ucCadastroBasico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ucCadastroBasicoNormal.resx">
+      <DependentUpon>ucCadastroBasicoNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ucMenuBasico.resx">
+      <DependentUpon>ucMenuBasico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes Visuais\ucBotoesCadastro.resx">
+      <DependentUpon>ucBotoesCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limpar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Limpar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expandir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Encolher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imprimir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparMini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finaliza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autenticação.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordQ256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password256.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
