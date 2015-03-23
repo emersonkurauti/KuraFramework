@@ -35,27 +35,6 @@ namespace KuraFrameWork.Banco
         }
 
         /// <summary>
-        /// Tabela que será utilizada
-        /// </summary>
-        private string _strTabela;
-        public string strTabela
-        {
-            get { return _strTabela; }
-            set { _strTabela = value; }
-        }
-
-        /// <summary>
-        /// Chave primária, (auto incremento)
-        /// Caso seja chave composta de relacionamento N:N separar por ";"
-        /// </summary>
-        private string _strCampoChave;
-        public string strCampoChave
-        {
-            get { return _strCampoChave; }
-            set { _strCampoChave = value; }
-        }
-
-        /// <summary>
         /// Filtro avançado
         /// </summary>
         private string _strFiltro;
@@ -63,26 +42,6 @@ namespace KuraFrameWork.Banco
         {
             get { return _strFiltro; }
             set { _strFiltro = value; }
-        }
-
-        /// <summary>
-        /// Variável que armazena a transação
-        /// </summary>
-        private OracleTransaction _Transacao;
-        public OracleTransaction transacao
-        {
-            get { return _Transacao; }
-            set { _Transacao = value; }
-        }
-
-        /// <summary>
-        /// Define se vai controlar a conxao automático
-        /// </summary>
-        private bool _bControlaConxao;
-        public bool bControlaConxao
-        {
-            get { return _bControlaConxao; }
-            set { _bControlaConxao = value; }
         }
 
         /// <summary>
@@ -96,14 +55,13 @@ namespace KuraFrameWork.Banco
         }
 
         /// <summary>
-        /// Define a necessidade de de gerar código
-        /// Caso seja uma tabela de relção N:N não há a necessidade de gerar a chave
+        /// Variável que armazena a transação
         /// </summary>
-        private bool _bGerarChave = true;
-        public bool bGerarChave
+        private OracleTransaction _Transacao;
+        public OracleTransaction transacao
         {
-            get { return _bGerarChave; }
-            set { _bGerarChave = value; }
+            get { return _Transacao; }
+            set { _Transacao = value; }
         }
 
         /// <summary>
@@ -114,16 +72,6 @@ namespace KuraFrameWork.Banco
         {
             get { return _bEmTransacao; }
             set { _bEmTransacao = value; }
-        }
-
-        /// <summary>
-        /// Chave composta, desconsiderar a chave auto incremento
-        /// </summary>
-        private string _strChaveComposta = "";
-        public string strChaveComposta
-        {
-            get { return _strChaveComposta; }
-            set { _strChaveComposta = value; }
         }
 
         /// <summary>
@@ -139,11 +87,21 @@ namespace KuraFrameWork.Banco
         /// <summary>
         /// Objeto a ser manipulado pelo banco
         /// </summary>
-        private object _obj;
-        public object obj
+        private object _objCO;
+        public object objCO
         {
-            get { return _obj; }
-            set { _obj = value; }
+            get { return _objCO; }
+            set { _objCO = value; }
+        }
+
+        /// <summary>
+        /// Objeto de mapeamento
+        /// </summary>
+        private object _objCA;
+        public object objCA
+        {
+            get { return _objCA; }
+            set { _objCA = value; }
         }
 
         /// <summary>
@@ -318,13 +276,13 @@ namespace KuraFrameWork.Banco
             string strProjecao = "";
             string strParametros = "";
 
-            Type type = _obj.GetType();
+            Type type = _objCO.GetType();
             PropertyInfo[] properties = type.GetProperties();
 
             foreach (var property in properties)
             {
                 string name = property.Name;
-                object temp = _obj.GetType().GetProperty(name).GetValue(obj, null);
+                object temp = _objCO.GetType().GetProperty(name).GetValue(objCO, null);
 
                 if (property.Name != "strFiltro")
                 {
@@ -415,13 +373,13 @@ namespace KuraFrameWork.Banco
             string strAtributos = "";
             string strValores = "";
 
-            Type type = _obj.GetType();
+            Type type = _objCO.GetType();
             PropertyInfo[] properties = type.GetProperties();
 
             foreach (var property in properties)
             {
                 string name = property.Name;
-                object temp = _obj.GetType().GetProperty(property.Name).GetValue(obj, null);
+                object temp = _objCO.GetType().GetProperty(property.Name).GetValue(objCO, null);
 
                 if (!property.Name.Substring(0, 3).Equals("CC_") && !property.Name.Equals("strFiltro"))
                 {
@@ -470,13 +428,13 @@ namespace KuraFrameWork.Banco
             string strAtualizacoes = "";
             string strCondicao = "";
 
-            Type type = _obj.GetType();
+            Type type = _objCO.GetType();
             PropertyInfo[] properties = type.GetProperties();
 
             foreach (var property in properties)
             {
                 string name = property.Name;
-                object temp = _obj.GetType().GetProperty(property.Name).GetValue(obj, null);
+                object temp = _objCO.GetType().GetProperty(property.Name).GetValue(objCO, null);
 
                 if (!property.Name.Substring(0, 3).Equals("CC_") && !property.Name.Equals("strFiltro"))
                 {
@@ -520,13 +478,13 @@ namespace KuraFrameWork.Banco
             string strCondicao = "";
             string strValorChaveEstrangeira = "";
 
-            Type type = _obj.GetType();
+            Type type = _objCO.GetType();
             PropertyInfo[] properties = type.GetProperties();
 
             foreach (var property in properties)
             {
                 string name = property.Name;
-                object temp = _obj.GetType().GetProperty(property.Name).GetValue(obj, null);
+                object temp = _objCO.GetType().GetProperty(property.Name).GetValue(objCO, null);
                 if (!property.Name.Substring(0, 3).Equals("CC_"))
                 {
                     if ((temp is string) || (temp is int) || (temp is Int64) || (temp is float) ||
