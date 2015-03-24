@@ -13,7 +13,7 @@ namespace KuraFrameWork.ClasseBase
         /// <summary>
         /// Objeto de conxão com banco
         /// </summary>
-        public csBanco objBanco = csBanco.Instance;
+        public csBanco_2_0_EMTESTE objBanco = csBanco_2_0_EMTESTE.Instance;
 
         /// <summary>
         /// Filtro para consulta avançada
@@ -23,6 +23,16 @@ namespace KuraFrameWork.ClasseBase
         {
             get { return _strFiltro; }
             set { _strFiltro = value; }
+        }
+
+        /// <summary>
+        /// Mapeamento dos atributos da tabela
+        /// </summary>
+        private object _objCA;
+        public object objCA
+        {
+            get { return _objCA; }
+            set { _objCA = value; }
         }
 
         /// <summary>
@@ -53,7 +63,7 @@ namespace KuraFrameWork.ClasseBase
                                 if (temp is bool)
                                     this.GetType().GetProperty(property.Name).SetValue(this, false, null);
                                 else
-                                    if(temp is byte[])
+                                    if (temp is byte[])
                                         this.GetType().GetProperty(property.Name).SetValue(this, null, null);
             }
         }
@@ -180,14 +190,12 @@ namespace KuraFrameWork.ClasseBase
         }
 
         /// <summary>
-        /// Método para ser sobrescrito
+        /// Método para atualizar os objetos em operação
         /// </summary>
         public virtual void AtualizaObj()
         {
-            objBanco.obj = this;
-            objBanco.bGerarChave = true;
-            objBanco.bControlaConxao = true;
-            objBanco.strChaveEstrangeira = "";
+            objBanco.objCO = this;
+            objBanco.objCA = _objCA;
         }
     }
 }

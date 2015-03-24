@@ -93,4 +93,3 @@ C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.dll
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.pdb
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPFCNPJ.resources
-C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
