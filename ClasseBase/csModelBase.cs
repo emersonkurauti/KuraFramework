@@ -28,11 +28,11 @@ namespace KuraFrameWork.ClasseBase
         /// <summary>
         /// Mapeamento dos atributos da tabela
         /// </summary>
-        private object _objCA;
-        public object objCA
+        private Type _tobjCA;
+        public Type tobjCA
         {
-            get { return _objCA; }
-            set { _objCA = value; }
+            get { return _tobjCA; }
+            set { _tobjCA = value; }
         }
 
         /// <summary>
@@ -195,7 +195,7 @@ namespace KuraFrameWork.ClasseBase
         public virtual void AtualizaObj()
         {
             objBanco.objCO = this;
-            objBanco.objCA = _objCA;
+            objBanco.tobjCA = _tobjCA;
         }
     }
 }

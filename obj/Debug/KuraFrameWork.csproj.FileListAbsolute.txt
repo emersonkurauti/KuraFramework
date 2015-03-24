@@ -82,6 +82,7 @@ C:\KuraSoft\KuraFramework\bin\Debug\KuraFrameWork.pdb
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
+C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPFCNPJ.resources
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucConsultaBasicaNormal.resources
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasico.resources
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Formularios.ucCadastroBasicoNormal.resources
@@ -92,4 +93,3 @@ C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucBotoesCa
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.dll
 C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.pdb
-C:\KuraSoft\KuraFramework\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPFCNPJ.resources

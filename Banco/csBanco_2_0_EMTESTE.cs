@@ -98,11 +98,11 @@ namespace KuraFrameWork.Banco
         /// Type do ObjCA
         /// </summary>
         private Type _tobjCA;
-
-        /// <summary>
-        /// Propriedados do ObjCA
-        /// </summary>
-        private PropertyInfo[] _pobjCA;
+        public Type tobjCA
+        {
+            get { return _tobjCA; }
+            set { _tobjCA = value; }
+        }
 
         /// <summary>
         /// Objeto a ser manipulado pelo banco
@@ -115,20 +115,6 @@ namespace KuraFrameWork.Banco
                 _objCO = value;
                 _tobjCO = _objCO.GetType();
                 _pobjCO = _tobjCO.GetProperties();
-            }
-        }
-
-        /// <summary>
-        /// Objeto de mapeamento
-        /// </summary>
-        private object _objCA;
-        public object objCA
-        {
-            get { return _objCA; }
-            set { 
-                _objCA = value;
-                _tobjCA = _objCA.GetType();
-                _pobjCA = _tobjCA.GetProperties();
             }
         }
 
@@ -267,15 +253,15 @@ namespace KuraFrameWork.Banco
         private string RetornaCondicaoChaveComposta()
         {
             string strCondicao = "";
-            if (_tobjCA.GetProperty("deChaveComposta").ToString() != "")
+            if (_tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "")
             {
                 strCondicao = " WHERE ";
                 string[] strSeparador = new string[] { ";" };
-                string[] strChaveComposta = _tobjCA.GetProperty("deChaveComposta").ToString().Split(strSeparador, StringSplitOptions.RemoveEmptyEntries);
+                string[] strChaveComposta = _tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString().Split(strSeparador, StringSplitOptions.RemoveEmptyEntries);
 
                 foreach (string strCampo in strChaveComposta)
                 {
-                    strCondicao += " strCampo = " + _tobjCA.GetProperty(strCampo).ToString() + " AND ";
+                    strCondicao += " strCampo = " + _tobjCA.GetProperty(strCampo).GetValue(_tobjCA, null).ToString() + " AND ";
                 }
 
                 strCondicao = strCondicao.Substring(0, strCondicao.Length - 5);
@@ -292,17 +278,17 @@ namespace KuraFrameWork.Banco
         {
             DataTable dtDados = new DataTable();
 
-            if (Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").ToString()))
+            if (Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").GetValue(_tobjCA, null).ToString()))
                 ConectaBanco();
 
              if (_conexao.State == System.Data.ConnectionState.Open)
              {
-                 _comando.CommandText = "SELECT NVL(MAX(" + _tobjCA.GetProperty("nmCampoChave").ToString()+ "), 0) + 1 "+
-                                        "  FROM " + _tobjCA.GetProperty("nmTabela").ToString();
+                 _comando.CommandText = "SELECT NVL(MAX(" + _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString() + "), 0) + 1 " +
+                                        "  FROM " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString();
                  _comando.CommandText += RetornaCondicaoChaveComposta();
                  dtDados.Load(_comando.ExecuteReader());
 
-                 if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").ToString()))
+                 if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").GetValue(_tobjCA, null).ToString()))
                      DesconectaBanco();
              }
 
@@ -388,7 +374,7 @@ namespace KuraFrameWork.Banco
             }
 
             strSql = "Select " + strProjecao.Substring(0, strProjecao.Length - 1).ToString() +
-                     "  from " + _tobjCA.GetProperty("nmTabela").ToString();
+                     "  from " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString();
 
             if (_strFiltro != "")
                 strSql += _strFiltro;
@@ -424,9 +410,9 @@ namespace KuraFrameWork.Banco
                     if ((temp is string) || (temp is int) || (temp is Int64) || (temp is float) ||
                         (temp is decimal) || (temp is DateTime) || (temp is char) || (temp is bool))
                     {
-                        if ((!Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").ToString())) ||
-                            (property.Name.ToString() != _tobjCA.GetProperty("nmCampoChave").ToString() && 
-                             Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").ToString())))
+                        if ((!Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").GetValue(_tobjCA, null).ToString())) ||
+                            (property.Name.ToString() != _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString() &&
+                             Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").GetValue(_tobjCA, null).ToString())))
                         {
                             strAtributos += property.Name.ToString() + ",";
 
@@ -439,15 +425,15 @@ namespace KuraFrameWork.Banco
                 }
             }
 
-            if (Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").ToString()))
+            if (Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").GetValue(_tobjCA, null).ToString()))
             {
                 _cdChave = GerarCodigo();
 
-                strSql = "Insert Into " + _tobjCA.GetProperty("nmTabela").ToString() + " (" + _tobjCA.GetProperty("nmCampoChave").ToString() + "," + strAtributos.Substring(0, strAtributos.Length - 1) + ") " +
+                strSql = "Insert Into " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + " (" + _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString() + "," + strAtributos.Substring(0, strAtributos.Length - 1) + ") " +
                          " Values(" + _cdChave.ToString() + "," + strValores.Substring(0, strValores.Length - 1) + ")";
             }
             else
-                strSql = "Insert Into " + _tobjCA.GetProperty("nmTabela").ToString() + " (" + strAtributos.Substring(0, strAtributos.Length - 1) + ") " +
+                strSql = "Insert Into " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + " (" + strAtributos.Substring(0, strAtributos.Length - 1) + ") " +
                          " Values(" + strValores.Substring(0, strValores.Length - 1) + ")";
 
             return ExecutarSQL(strSql);
@@ -476,7 +462,7 @@ namespace KuraFrameWork.Banco
                         (temp is char) || (temp is bool) || (temp is byte[]))
                     {
 
-                        if (property.Name.ToString() != _tobjCA.GetProperty("nmCampoChave").ToString())
+                        if (property.Name.ToString() != _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString())
                         {
                             strAtualizacoes += property.Name.ToString() + " = ";
 
@@ -486,7 +472,7 @@ namespace KuraFrameWork.Banco
                                 strAtualizacoes += temp.ToString() + ",";
                         }
                         else
-                            strCondicao = " Where " + _tobjCA.GetProperty("nmCampoChave").ToString() + " = " + temp.ToString();
+                            strCondicao = " Where " + _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString() + " = " + temp.ToString();
                     }
                 }
             }
@@ -495,7 +481,7 @@ namespace KuraFrameWork.Banco
             if (strCondicaoChaveComposta != "")
                 strCondicao += " AND " + RetornaCondicaoChaveComposta();
 
-            strSql = "Update " + _tobjCA.GetProperty("nmTabela").ToString() + 
+            strSql = "Update " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + 
                      "   Set " + strAtualizacoes.Substring(0, strAtualizacoes.Length - 1) + strCondicao;
 
             return ExecutarSQL(strSql);
@@ -520,8 +506,8 @@ namespace KuraFrameWork.Banco
                     if ((temp is string) || (temp is int) || (temp is Int64) || (temp is float) ||
                         (temp is decimal) || (temp is DateTime) || (temp is char) || (temp is bool))
                     {
-                        if (property.Name.ToString() == _tobjCA.GetProperty("nmCampoChave").ToString())
-                            strCondicao = " Where " + _tobjCA.GetProperty("nmCampoChave").ToString() + " = " + temp.ToString();
+                        if (property.Name.ToString() == _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString())
+                            strCondicao = " Where " + _tobjCA.GetProperty("nmCampoChave").GetValue(_tobjCA, null).ToString() + " = " + temp.ToString();
                     }
                 }
             }
@@ -530,7 +516,7 @@ namespace KuraFrameWork.Banco
             if (strCondicaoChaveComposta != "")
                 strCondicao += " AND " + RetornaCondicaoChaveComposta();
 
-            strSql = "Delete From " + _tobjCA.GetProperty("nmTabela").ToString() + strCondicao;
+            strSql = "Delete From " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + strCondicao;
 
             return ExecutarSQL(strSql);
         }
@@ -593,13 +579,13 @@ namespace KuraFrameWork.Banco
                     _comando.CommandText = sSQL;
                     iLinhas = _comando.ExecuteNonQuery();
 
-                    if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").ToString()))
+                    if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").GetValue(_tobjCA, null).ToString()))
                         DesconectaBanco();
                 }
             }
             catch
             {
-                if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").ToString()))
+                if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").GetValue(_tobjCA, null).ToString()))
                     DesconectaBanco();
                 return false;
             }
