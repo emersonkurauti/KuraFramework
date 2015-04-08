@@ -34,6 +34,7 @@ namespace KuraFrameWork.Componentes_Visuais
         private void ucTextBoxMaskCPFCNPJ_Leave(object sender, EventArgs e)
         {
             AtualizaMascara();
+
         }
 
         private void AtualizaMascara()

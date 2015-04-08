@@ -253,7 +253,7 @@ namespace KuraFrameWork.Banco
         private string RetornaCondicaoChaveComposta()
         {
             string strCondicao = "";
-            if (_tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "")
+            if (_tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "" && _tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "[ChComposta]")
             {
                 strCondicao = " WHERE ";
                 string[] strSeparador = new string[] { ";" };
