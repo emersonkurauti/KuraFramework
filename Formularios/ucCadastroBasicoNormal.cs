@@ -124,14 +124,24 @@ namespace KuraFrameWork.Formularios
 
                     if ((bool)bInserir)
                     {
+                        object nmCampoChave = _tobjCa.GetProperty("nmCampoChave").GetValue(_tobjCa, null);
+
+                        PropertyInfo pobjCo = vobjCon.GetType().GetProperty("objCo");
+
+                        object objCo = tobjCon.GetProperty("objCo").GetValue(_objCon, null);
+                        Type tobjCo = objCo.GetType();
+
+                        object oCodigo = tobjCo.GetProperty(nmCampoChave.ToString()).GetValue(objCo, null);
+
                         base.tsbSalvar_Click(sender, e);
                         ControleCampos(pnForm.Controls, false);
                         PreencheDadosGridView();
+                        AtualizaCodigo(oCodigo.ToString(), nmCampoChave.ToString());
                         btnConsultar_Click(null, null);
                     }
                     else
                     {
-                        PropertyInfo strMensagemErro = tobjCon.GetProperty("_strMensagemErro");
+                        object strMensagemErro = vobjCon.GetType().GetProperty("strMensagemErro").GetValue(vobjCon, null);
                         MessageBox.Show(strMensagemErro.ToString());
                     }
                 }
@@ -150,7 +160,7 @@ namespace KuraFrameWork.Formularios
                         }
                         else
                         {
-                            PropertyInfo strMensagemErro = tobjCon.GetProperty("_strMensagemErro");
+                            object strMensagemErro = vobjCon.GetType().GetProperty("strMensagemErro").GetValue(vobjCon, null);
                             MessageBox.Show(strMensagemErro.ToString());
                         }
                     }
@@ -177,7 +187,7 @@ namespace KuraFrameWork.Formularios
 
             if (!(bool)bExcluir)
             {
-                PropertyInfo strMensagemErro = tobjCon.GetProperty("_strMensagemErro");
+                object strMensagemErro = vobjCon.GetType().GetProperty("strMensagemErro").GetValue(vobjCon, null);
                 MessageBox.Show(strMensagemErro.ToString());
             }
             else
@@ -396,7 +406,7 @@ namespace KuraFrameWork.Formularios
                 }
                 else
                 {
-                    PropertyInfo strMensagemErro = vobjCon.GetType().GetProperty("strMensagemErro");
+                    object strMensagemErro = vobjCon.GetType().GetProperty("strMensagemErro").GetValue(vobjCon, null);
                     MessageBox.Show(strMensagemErro.ToString());
                 }
             }
@@ -483,7 +493,7 @@ namespace KuraFrameWork.Formularios
                 }
                 else
                 {
-                    PropertyInfo strMensagemErro = tobjCon.GetProperty("_strMensagemErro");
+                    object strMensagemErro = _objCon.GetType().GetProperty("strMensagemErro").GetValue(_objCon, null);
                     MessageBox.Show(strMensagemErro.ToString());
                 }
             }
@@ -560,6 +570,20 @@ namespace KuraFrameWork.Formularios
             }
 
             pObjCon = vobjCon;
+        }
+
+        public virtual void AtualizaCodigo(string pCodigo, string pCampoChave)
+        {
+            foreach (var control in pnForm.Controls)
+            {
+                if (control is KuraFrameWork.Componentes_Visuais.ucTextBox)
+                {
+                    if (((KuraFrameWork.Componentes_Visuais.ucTextBox)control).Name == pCampoChave.ToString())
+                    {
+                        ((KuraFrameWork.Componentes_Visuais.ucTextBox)control).Text = pCodigo;
+                    }
+                }
+            }
         }
 
         /// <summary>
