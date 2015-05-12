@@ -84,7 +84,7 @@ namespace KuraFrameWork.ClasseBase
             {
                 object temp = this.GetType().GetProperty(property.Name).GetValue(this, null);
 
-                if (temp != null)
+                if (temp != null && (temp is string))
                 {
                     dc = new DataColumn();
                     dc.DataType = temp.GetType();

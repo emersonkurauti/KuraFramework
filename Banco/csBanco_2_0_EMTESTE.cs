@@ -123,7 +123,7 @@ namespace KuraFrameWork.Banco
         /// </summary>
         private csBanco_2_0_EMTESTE()
         {
-            _strStringConexao = "Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE))); User Id=SansERP; Password=SansERP";
+            _strStringConexao = "Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE))); User Id=karaoke; Password=karaoke";
             _conexao = new OracleConnection(_strStringConexao);
             _comando = new OracleCommand();
             _comando.Connection = _conexao;
@@ -381,7 +381,6 @@ namespace KuraFrameWork.Banco
             else
                 if (strParametros != "")
                     strSql += " where " + strParametros.Substring(0, strParametros.Length - 4).ToString();
-
 
             return RetornaDT(strSql);
         }
