@@ -84,13 +84,14 @@ namespace KuraFrameWork.ClasseBase
             {
                 object temp = this.GetType().GetProperty(property.Name).GetValue(this, null);
 
-                if (temp != null && (temp is string))
+                if (temp != null && (temp is string || temp is Int32) &&
+                    (property.Name != "strFiltro"))
                 {
                     dc = new DataColumn();
                     dc.DataType = temp.GetType();
                     dc.ColumnName = property.Name;
 
-                    if (property.Name.Substring(0, 3).Equals("CC_"))
+                    if (property.Name.Substring(0, 3).Equals("CC_") && (temp is string))
                         dc.MaxLength = 100000;
 
                     dt.Columns.Add(dc);
