@@ -261,7 +261,7 @@ namespace KuraFrameWork.Banco
 
                 foreach (string strCampo in strChaveComposta)
                 {
-                    strCondicao += " strCampo = " + _tobjCA.GetProperty(strCampo).GetValue(_tobjCA, null).ToString() + " AND ";
+                    strCondicao += strCampo + " = " + _objCO.GetType().GetProperty(strCampo).GetValue(objCO, null).ToString() + " AND ";
                 }
 
                 strCondicao = strCondicao.Substring(0, strCondicao.Length - 5);
@@ -314,7 +314,12 @@ namespace KuraFrameWork.Banco
                 if (property.Name != "strFiltro")
                 {
                     if (property.Name.Substring(0, 3).Equals("CC_"))
-                        strProjecao += "'' as " + name + ",";
+                    {
+                        if (property.Name.ToUpper().Equals("CC_CONTROLE"))
+                            strProjecao += "'" + csConstantes.sTpCarregado + "' as " + name + ",";
+                        else
+                            strProjecao += "'' as " + name + ",";
+                    }
                     else
                     {
                         if ((temp is string) || (temp is int) || (temp is Int64) || (temp is float) ||
@@ -478,7 +483,7 @@ namespace KuraFrameWork.Banco
 
             strCondicaoChaveComposta = RetornaCondicaoChaveComposta();
             if (strCondicaoChaveComposta != "")
-                strCondicao += " AND " + RetornaCondicaoChaveComposta();
+                strCondicao = strCondicaoChaveComposta;
 
             strSql = "Update " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + 
                      "   Set " + strAtualizacoes.Substring(0, strAtualizacoes.Length - 1) + strCondicao;
@@ -617,6 +622,26 @@ namespace KuraFrameWork.Banco
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Executa Select genérico
+        /// </summary>
+        /// <param name="dtDados"></param>
+        /// <param name="pstrComando"></param>
+        /// <returns></returns>
+        public bool SelectPersonalizado(out DataTable dtDados, string pstrComando)
+        {
+            try
+            {
+                dtDados = RetornaDT(pstrComando);
+                return true;
+            }
+            catch
+            {
+                dtDados = null;
+                return false;
+            }
         }
     }
 }

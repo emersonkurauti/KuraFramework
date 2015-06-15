@@ -54,17 +54,23 @@ namespace KuraFrameWork.ClasseBase
                     if (temp is char)
                         this.GetType().GetProperty(property.Name).SetValue(this, ' ', null);
                     else
-                        if ((temp is int) || (temp is Int64) || (temp is float) || (temp is decimal))
+                        if ((temp is int) || (temp is Int64))
                             this.GetType().GetProperty(property.Name).SetValue(this, 0, null);
                         else
-                            if (temp is DateTime)
-                                this.GetType().GetProperty(property.Name).SetValue(this, null, null);
+                            if (temp is float)
+                                this.GetType().GetProperty(property.Name).SetValue(this, 0f, null);
                             else
-                                if (temp is bool)
-                                    this.GetType().GetProperty(property.Name).SetValue(this, false, null);
+                                if (temp is decimal)
+                                    this.GetType().GetProperty(property.Name).SetValue(this, null, null);
                                 else
-                                    if (temp is byte[])
+                                    if (temp is DateTime)
                                         this.GetType().GetProperty(property.Name).SetValue(this, null, null);
+                                    else
+                                        if (temp is bool)
+                                            this.GetType().GetProperty(property.Name).SetValue(this, false, null);
+                                        else
+                                            if (temp is byte[])
+                                                this.GetType().GetProperty(property.Name).SetValue(this, null, null);
             }
         }
 
