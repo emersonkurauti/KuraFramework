@@ -158,7 +158,7 @@ namespace KuraFrameWork.Banco
             }
             catch
             {
-                return false;
+                throw new Exception("Erro ao conectar na base de dados");
             }
         }
 

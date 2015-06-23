@@ -98,7 +98,10 @@ namespace KuraFrameWork.ClasseBase
                     dc.ColumnName = property.Name;
 
                     if (property.Name.Substring(0, 3).Equals("CC_") && (temp is string))
+                    {
+                        dc.ReadOnly = false;
                         dc.MaxLength = 100000;
+                    }
 
                     dt.Columns.Add(dc);
                 }
