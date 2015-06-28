@@ -250,12 +250,13 @@ namespace KuraFrameWork.Banco
         /// Retorna a condição com a chave composta
         /// </summary>
         /// <returns></returns>
-        private string RetornaCondicaoChaveComposta()
+        private string RetornaCondicaoChaveComposta(bool bGeraComWhere = true)
         {
             string strCondicao = "";
             if (_tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "" && _tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString() != "[ChComposta]")
             {
-                strCondicao = " WHERE ";
+                if (bGeraComWhere)
+                    strCondicao = " WHERE ";
                 string[] strSeparador = new string[] { ";" };
                 string[] strChaveComposta = _tobjCA.GetProperty("deChaveComposta").GetValue(_tobjCA, null).ToString().Split(strSeparador, StringSplitOptions.RemoveEmptyEntries);
 
@@ -278,7 +279,7 @@ namespace KuraFrameWork.Banco
         {
             DataTable dtDados = new DataTable();
 
-            if (Convert.ToBoolean(_tobjCA.GetProperty("_bGeraChave").GetValue(_tobjCA, null).ToString()))
+            if (Convert.ToBoolean(_tobjCA.GetProperty("_bControlaTransacao").GetValue(_tobjCA, null).ToString()))
                 ConectaBanco();
 
              if (_conexao.State == System.Data.ConnectionState.Open)
@@ -481,9 +482,9 @@ namespace KuraFrameWork.Banco
                 }
             }
 
-            strCondicaoChaveComposta = RetornaCondicaoChaveComposta();
+            strCondicaoChaveComposta = RetornaCondicaoChaveComposta(false);
             if (strCondicaoChaveComposta != "")
-                strCondicao = strCondicaoChaveComposta;
+                strCondicao += " AND " + strCondicaoChaveComposta;
 
             strSql = "Update " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + 
                      "   Set " + strAtualizacoes.Substring(0, strAtualizacoes.Length - 1) + strCondicao;
@@ -516,9 +517,9 @@ namespace KuraFrameWork.Banco
                 }
             }
 
-            strCondicaoChaveComposta = RetornaCondicaoChaveComposta();
+            strCondicaoChaveComposta = RetornaCondicaoChaveComposta(false);
             if (strCondicaoChaveComposta != "")
-                strCondicao += " AND " + RetornaCondicaoChaveComposta();
+                strCondicao += " AND " + strCondicaoChaveComposta;
 
             strSql = "Delete From " + _tobjCA.GetProperty("nmTabela").GetValue(_tobjCA, null).ToString() + strCondicao;
 
