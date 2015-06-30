@@ -29,5 +29,9 @@ namespace KuraFrameWork
         public const string sTpInserido = "I";
         public const string sTpAlterado = "A";
         public const string sTpExcluido = "E";
+
+        //Ordenação
+        public const string sCrescente = " ASC";
+        public const string sDecrescente = " DESC";
     }
 }
