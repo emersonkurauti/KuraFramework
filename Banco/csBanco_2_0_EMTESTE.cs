@@ -644,5 +644,36 @@ namespace KuraFrameWork.Banco
                 return false;
             }
         }
+
+        /// <summary>
+        /// Executa SQL personalizado
+        /// </summary>
+        /// <param name="sSQL"></param>
+        /// <returns></returns>
+        public bool ExecutarSQLPersonalizado(string sSQL, bool bControlaTransacao = true)
+        {
+            int iLinhas = 0;
+
+            try
+            {
+                if (ConectaBanco())
+                {
+                    _comando.Transaction = _Transacao;
+                    _comando.CommandText = sSQL;
+                    iLinhas = _comando.ExecuteNonQuery();
+
+                    if (bControlaTransacao)
+                        DesconectaBanco();
+                }
+            }
+            catch
+            {
+                if (bControlaTransacao)
+                    DesconectaBanco();
+                return false;
+            }
+
+            return true;
+        }
     }
 }

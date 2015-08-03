@@ -52,76 +52,76 @@
     <Compile Include="Banco\csBanco_2_0_EMTESTE.cs" />
     <Compile Include="ClasseBase\csControllerBase.cs" />
     <Compile Include="ClasseBase\csModelBase.cs" />
-    <Compile Include="Componentes Visuais\ucComboBox.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucComboBox.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucComboBox.Designer.cs">
       <DependentUpon>ucComboBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucConsulta.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucConsulta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucConsulta.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucConsulta.Designer.cs">
       <DependentUpon>ucConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucImagens.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucImagens.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucImagens.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucImagens.Designer.cs">
       <DependentUpon>ucImagens.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucParametroRelatorio.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucParametroRelatorio.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucParametroRelatorio.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucParametroRelatorio.Designer.cs">
       <DependentUpon>ucParametroRelatorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBox.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBox.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBox.Designer.cs">
       <DependentUpon>ucTextBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMask.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMask.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMask.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMask.Designer.cs">
       <DependentUpon>ucTextBoxMask.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCEP.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCEP.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCEP.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCEP.Designer.cs">
       <DependentUpon>ucTextBoxMaskCEP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCNPJ.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCNPJ.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCNPJ.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCNPJ.Designer.cs">
       <DependentUpon>ucTextBoxMaskCNPJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCPF.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPF.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCPF.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPF.Designer.cs">
       <DependentUpon>ucTextBoxMaskCPF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPFCNPJ.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPFCNPJ.Designer.cs">
       <DependentUpon>ucTextBoxMaskCPFCNPJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskTelefone.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskTelefone.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxMaskTelefone.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxMaskTelefone.Designer.cs">
       <DependentUpon>ucTextBoxMaskTelefone.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxNumero.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxNumero.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucTextBoxNumero.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucTextBoxNumero.Designer.cs">
       <DependentUpon>ucTextBoxNumero.cs</DependentUpon>
     </Compile>
     <Compile Include="Constantes\csConstantes.cs" />
@@ -161,10 +161,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Componentes Visuais\ucBotoesCadastro.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucBotoesCadastro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes Visuais\ucBotoesCadastro.Designer.cs">
+    <Compile Include="ClasseBase\Componentes Visuais\ucBotoesCadastro.Designer.cs">
       <DependentUpon>ucBotoesCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,16 +177,16 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Componentes Visuais\ucConsulta.resx">
+    <EmbeddedResource Include="ClasseBase\Componentes Visuais\ucConsulta.resx">
       <DependentUpon>ucConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes Visuais\ucImagens.resx">
+    <EmbeddedResource Include="ClasseBase\Componentes Visuais\ucImagens.resx">
       <DependentUpon>ucImagens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes Visuais\ucTextBoxMaskCPF.resx">
+    <EmbeddedResource Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPF.resx">
       <DependentUpon>ucTextBoxMaskCPF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes Visuais\ucTextBoxMaskCPFCNPJ.resx">
+    <EmbeddedResource Include="ClasseBase\Componentes Visuais\ucTextBoxMaskCPFCNPJ.resx">
       <DependentUpon>ucTextBoxMaskCPFCNPJ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ucConsultaBasicaNormal.resx">
@@ -208,7 +208,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes Visuais\ucBotoesCadastro.resx">
+    <EmbeddedResource Include="ClasseBase\Componentes Visuais\ucBotoesCadastro.resx">
       <DependentUpon>ucBotoesCadastro.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
